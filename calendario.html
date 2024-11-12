@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Académico</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="icon" href="images/icono.png">
+
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sección de Calendario Académico -->
+    <section id="calendario-academico">
+        <h2>Calendario Académico</h2>
+        <div id="calendario"></div>
+        <button class="return"><a href="index.html#calendario">Volver al inicio</a></button>
+    </section>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+
+
+    <!-- Código para inicializar el calendario -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendario');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',  // Vista inicial del mes
+                locale: 'es',                 // Cambia el idioma a español
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                events: [
+                    {
+                        title: 'Inicio de Clases',
+                        start: '2024-02-05'
+                    },
+                    {
+                        title: 'Examen de Matemáticas',
+                        start: '2024-03-05',
+                        description: 'Primer parcial de Matemáticas'
+                    },
+                    {
+                        title: 'Reunión de Padres',
+                        start: '2024-04-10',
+                        end: '2024-04-10',
+                        description: 'Reunión para discutir el progreso académico'
+                    },
+                    {
+                        title: 'Defensa de Proyectos de Grado en el área de Sistemas Informaticos',
+                        start: '2024-11-12', 
+                        description: 'Proyectos para optar al titulo de Técnico Medio en el área de Sistemas Informáticos'
+                    }
+                ],
+                eventClick: function(info) {
+                    info.jsEvent.preventDefault();
+                    
+                    if (info.event.url) {
+                        window.open(info.event.url);
+                    } else {
+                        alert('Evento: ' + info.event.title + '\n' + 'Descripción: ' + info.event.extendedProps.description);
+                    }
+                }
+            });
+
+            calendar.render();
+        });
+    </script>
+
+</body>
+</html>

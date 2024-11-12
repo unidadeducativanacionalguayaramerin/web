@@ -1,0 +1,20 @@
+[
+    {
+        "titulo": "Reunión de Padres",
+        "resumen": "El próximo miércoles a las 6:00 PM tendremos una reunión informativa para todos los padres de familia. Conoce todos los detalles y la agenda en el siguiente enlace.",
+        "imagen": "liceo_images/reunion.jpg",
+        "enlace": "noticia1.html"
+    },
+    {
+        "titulo": "INTER'CURSO campeonato de futsal en la unidad educativa",
+        "resumen": "El Gobierno Estudiantil organiza un campeonato de futsal para recaudar fondos con el objetivo de cumplir con sus actividades propuestas para su gestión.",
+        "imagen": "images/intercurso.jpg",
+        "enlace": "noticia1.html"
+    },
+    {
+        "titulo": "Defensa de Proyectos de Grado",
+        "resumen": "Los estudiantes del área de sistemas informáticos realizarán la defensa de sus proyectos para optar al título de Técnico Medio en el área de Sistemas Informáticos.",
+        "imagen": "liceo_images/defensa.png",
+        "enlace": "noticia2.html"
+    }
+]

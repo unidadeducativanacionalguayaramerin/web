@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Estilos generales para la sección de información académica */
+#informacion-academica {
+    padding: 2em;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+}
+
+/* Título principal de la sección */
+#informacion-academica h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+/* Estilos para cada bloque de contenido */
+#informacion-academica .contenido {
+    background-color: #fff;
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s;
+}
+
+#informacion-academica .contenido:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de cada subsección */
+#informacion-academica h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+/* Estilo para listas en cada bloque */
+#informacion-academica ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    color: #555;
+}
+
+#informacion-academica ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Texto general de cada bloque */
+#informacion-academica p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para botones de descarga y enlaces */
+#informacion-academica a, #informacion-academica button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color:#4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+}
+
+#informacion-academica a:hover, #informacion-academica button:hover {
+    background-color: #4CAF50;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}

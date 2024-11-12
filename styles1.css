@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para la cabecera de la noticia */
+.noticia-header {
+    text-align: center;
+    padding: 2em;
+    background-color: #f5f5f5;
+    color: #4CAF50;
+}
+
+.noticia-header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.noticia-header p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Estilos para el contenido principal de la noticia */
+.contenido-noticia {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    line-height: 1.8;
+}
+
+.contenido-noticia img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+.contenido-noticia ul {
+    margin-top: 1em;
+    padding-left: 1.5em;
+    list-style-type: disc;
+}
+
+.contenido-noticia ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Botón para regresar a la página de noticias */
+.boton-regresar {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0.7em 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-regresar:hover {
+    background-color: #45a049;
+}
+
+#calendario-academico {
+    padding: 2em;
+    text-align: center;
+}
+
+#calendario {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}

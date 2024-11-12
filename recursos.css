@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+section {
+    padding: 2em;
+    margin: 1em;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Estilos para la sección de recursos */
+#recursos {
+    padding: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#recursos h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+#recursos p {
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Contenedor de los recursos */
+.recursos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+/* Estilo general de las tarjetas */
+.recurso-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 1em;
+    width: calc(100% / 4 - 2em); /* Tres tarjetas por fila */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+/* Colores por asignatura */
+.comunicacion-lenguaje {
+    border-top: 4px solid #1e88e5; /* Azul */
+}
+
+.lengua-extranjera {
+    border-top: 4px solid #f44336; /* Rojo */
+}
+
+.ciencias-sociales {
+    border-top: 4px solid #ff9800; /* Naranja */
+}
+
+.educacion-fisica {
+    border-top: 4px solid #4caf50; /* Verde */
+}
+
+.educacion-musical {
+    border-top: 4px solid #9c27b0; /* Púrpura */
+}
+
+.artes-plasticas {
+    border-top: 4px solid #03a9f4; /* Azul claro */
+}
+
+.matematicas {
+    border-top: 4px solid #007bff; /* Azul oscuro */
+}
+
+.tecnica-tecnologica {
+    border-top: 4px solid #8bc34a; /* Verde claro */
+}
+
+.biologia {
+    border-top: 4px solid #4caf50; /* Verde */
+}
+
+.geografia {
+    border-top: 4px solid #ffeb3b; /* Amarillo */
+}
+
+.fisica {
+    border-top: 4px solid #673ab7; /* Violeta */
+}
+
+.quimica {
+    border-top: 4px solid #ff5722; /* Naranja oscuro */
+}
+
+.filosofia {
+    border-top: 4px solid #3f51b5; /* Azul */
+}
+
+.psicologia {
+    border-top: 4px solid #9e9e9e; /* Gris */
+}
+
+.valores-espiritualidad {
+    border-top: 4px solid #607d8b; /* Gris azulado */
+}
+
+/* Estilos adicionales en el texto para cada asignatura */
+.comunicacion-lenguaje h3, .comunicacion-lenguaje .download-button {
+    color: #1e88e5;
+}
+
+.lengua-extranjera h3, .lengua-extranjera .download-button {
+    color: #f44336;
+}
+
+.ciencias-sociales h3, .ciencias-sociales .download-button {
+    color: #ff9800;
+}
+
+.educacion-fisica h3, .educacion-fisica .download-button {
+    color: #4caf50;
+}
+
+.educacion-musical h3, .educacion-musical .download-button {
+    color: #9c27b0;
+}
+
+.artes-plasticas h3, .artes-plasticas .download-button {
+    color: #03a9f4;
+}
+
+.matematicas h3, .matematicas .download-button {
+    color: #007bff;
+}
+
+.tecnica-tecnologica h3, .tecnica-tecnologica .download-button {
+    color: #8bc34a;
+}
+
+.biologia h3, .biologia .download-button {
+    color: #4caf50;
+}
+
+.geografia h3, .geografia .download-button {
+    color: #ffeb3b;
+}
+
+.fisica h3, .fisica .download-button {
+    color: #673ab7;
+}
+
+.quimica h3, .quimica .download-button {
+    color: #ff5722;
+}
+
+.filosofia h3, .filosofia .download-button {
+    color: #3f51b5;
+}
+
+.psicologia h3, .psicologia .download-button {
+    color: #9e9e9e;
+}
+
+.valores-espiritualidad h3, .valores-espiritualidad .download-button {
+    color: #607d8b;
+}
+
+/* Efecto al pasar el ratón sobre la tarjeta */
+.recurso-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo para los botones de descarga */
+.download-button {
+    display: inline-block;
+    background-color: #fff; 
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto de hover */
+.download-button:hover {
+    background-color: #0056b3; /* Color más oscuro cuando se pasa el ratón */
+    transform: translateY(-3px); /* Efecto de levitar el botón */
+}
+
+/* Efecto cuando el botón está deshabilitado */
+.download-button:disabled {
+    background-color: #cccccc; /* Color gris para cuando el botón está deshabilitado */
+    cursor: not-allowed;
+}
+
+.back{
+    margin-top: 2em;
+    text-decoration: none;
+    padding: 1em 1.7em;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .download-button {
+        width: 100%; /* Botón con el ancho completo en pantallas pequeñas */
+        padding: 12px 0; /* Ajustar el padding */
+    }
+    .recursos-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%; /* Ajuste aún más pequeño para móviles */
+    }
+
+    .recurso-card{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .recursos-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%; /* Ajuste aún más pequeño para móviles */
+    }
+
+    .recurso-card{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
